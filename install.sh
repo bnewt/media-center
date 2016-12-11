@@ -9,9 +9,17 @@ sudo add-apt-repository ppa:mythbuntu/0.28
 sudo add-apt-repository ppa:heyarje/makemkv-beta
 
 sudo apt-get update 
-sudo apt-get install google-chrome-stable mythtv kodi kodi-pvr-mythtv
+sudo apt-get install google-chrome-stable mythtv kodi kodi-pvr-mythtv makemkv-bin makemkv-oss
 
 sudo apt-mark hold libaacs0
 cd /usr/lib
+sudo rm libaacs.so* libbdplus.so*
 sudo ln -s libmmbd.so.0 libaacs.so.0
 sudo ln -s libmmbd.so.0 libbdplus.so.0
+
+cd /usr/lib/x86_64-linux-gnu/
+sudo rm libaacs.so* libbdplus.so*
+sudo ln -s /usr/lib/libmmbd.so.0 libaacs.so.0
+sudo ln -s /usr/lib/libmmbd.so.0 libbdplus.so.0
+
+echo 'make sure to set screensaver to not lock the computer and set wake from sleep on keyboard'
