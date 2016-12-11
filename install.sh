@@ -10,3 +10,8 @@ sudo add-apt-repository ppa:heyarje/makemkv-beta
 
 sudo apt-get update 
 sudo apt-get install google-chrome-stable mythtv kodi kodi-pvr-mythtv
+
+sudo apt-mark hold libaacs0
+cd /usr/lib
+sudo ln -s libmmbd.so.0 libaacs.so.0
+sudo ln -s libmmbd.so.0 libbdplus.so.0
