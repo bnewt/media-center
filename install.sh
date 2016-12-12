@@ -23,4 +23,6 @@ sudo rm libaacs.so* libbdplus.so*
 sudo ln -s /usr/lib/libmmbd.so.0 libaacs.so.0
 sudo ln -s /usr/lib/libmmbd.so.0 libbdplus.so.0
 
+echo 'fix up mysql user permissions/password for mythtv'
+echo 'do mythtvbackend setup (file permissions are important so that the user the backend runs as can write to the recording directory)'
 echo 'make sure to set screensaver to not lock the computer and set wake from sleep on keyboard'
