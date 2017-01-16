@@ -1,0 +1,23 @@
+Install All Necessary Updates
+Delete Temporary Files and Update Rollback Files
+Adjust Power Settings
+Install Newest Video Card Drivers
+Disable Dynamic Contrast in the video card
+Set up symlinks for AppData and other folders off of SSD to HD
+Install windows updates: FOR /r %X IN (*.msu) DO (%X /quiet /norestart /nobackup)
+Disable hibernation
+Disable System Restore
+Use disk cleanup tool
+Set up kodi
+Install Required Programs:
+  Drivers for CableCard(s)
+  Microsoft Security Essentials
+  TeraCopy
+  FileZilla
+  Chrome Enterprise
+  Firefox
+  7Zip
+  Remote Potato
+Install Digital Cable Adviser
+Set up cable in WMC
+Enable kodi pvr w/ ServerWMC
